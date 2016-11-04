@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         clientId = MqttClient.generateClientId();
 
         client = new MqttAndroidClient(this.getApplicationContext(),"tcp://iot.eclipse.org:1883",clientId);
+        //client = new MqttAndroidClient(this.getApplicationContext(),"tcp://iot.oceanmanaus.com:1883",clientId);
 
         try {
             IMqttToken token = client.connect();
